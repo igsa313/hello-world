@@ -1,10 +1,10 @@
 public class Car {
-    String name;
-    int horsePower;
-    boolean isElectric;
-    char carClass;
-    float engineCapacity;
-    Car previousModel;
+    private String name;
+    private int horsePower;
+    private boolean isElectric;
+    private char carClass;
+    private float engineCapacity;
+    private Car previousModel;
 
     public Car(String name, int horsePower, boolean isElectric, char carClass, float engineCapacity, Car previousModel) {
         this.name = name;
