@@ -17,7 +17,7 @@ class Dog extends Animal {
             return "The turtle says: oop";
             int color;
             int size;
-            int hardness;
+            float hardness;
         }
     }
 }
