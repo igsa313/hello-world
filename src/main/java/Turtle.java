@@ -69,5 +69,4 @@ class Turtle extends Animal {
             '}';
         }
     }
-
 }
