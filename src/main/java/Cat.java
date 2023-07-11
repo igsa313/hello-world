@@ -1,10 +1,12 @@
 class Cat extends Animal {
-    public String getAnimalSound() {
-        return "The cat says: meow";
-    }
+
     public int averageMilisecondsLived;
     public int size;
     public int color;
+
+    public String getAnimalSound() {
+        return "The cat says: meow";
+    }
 
     public int getAverageMilisecondsLived() {
         return averageMilisecondsLived;
@@ -29,5 +31,9 @@ class Cat extends Animal {
     public void setColor(int color) {
         this.color = color;
     }
+    private static final int CAT_AGE_RATIO = 9;
 
+    public int getHumanAge() {
+        return CAT_AGE_RATIO * age;
+    }
 }

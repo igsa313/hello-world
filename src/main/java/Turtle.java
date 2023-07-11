@@ -1,11 +1,14 @@
 class Turtle extends Animal {
-    public String getAnimalSound() {
-        return "The turtle says: oop";
-    }
+
 
     public int averageMilisecondsLived;
     public int size;
     public int color;
+
+    public String getAnimalSound() {
+        return "The turtle says: oop";
+    }
+
     public int getAverageMilisecondsLived() {
         return averageMilisecondsLived;
     }
@@ -30,15 +33,17 @@ class Turtle extends Animal {
         this.color = color;
     }
 
-    class shell{
+    class Shell {
         public int color;
         public String hardness;
         public String size;
-        public shell (int color, String hardness, String size){
+
+        public Shell(int color, String hardness, String size) {
             this.color = color;
             this.hardness = hardness;
             this.size = size;
         }
+
         public int getColor() {
             return color;
         }
@@ -46,6 +51,7 @@ class Turtle extends Animal {
         public void setColor(int color) {
             this.color = color;
         }
+
         public String getHardness() {
             return hardness;
         }
@@ -53,6 +59,7 @@ class Turtle extends Animal {
         public void setColor(String hardness) {
             this.hardness = hardness;
         }
+
         public String getSize() {
             return size;
         }
@@ -66,7 +73,12 @@ class Turtle extends Animal {
                     "color='" + color + '\'' +
                     ", hardness=" + hardness +
                     ", size=" + size +
-            '}';
+                    '}';
         }
+    }
+    private static final int TURTLE_AGE_RATIO = 1;
+
+    public int getHumanAge() {
+        return TURTLE_AGE_RATIO * age;
     }
 }

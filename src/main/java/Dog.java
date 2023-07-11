@@ -1,10 +1,12 @@
 class Dog extends Animal {
-    public String getAnimalSound() {
-        return "The dog says: bark";
-    }
+
     public int averageMilisecondsLived;
     public int size;
     public int color;
+
+    public String getAnimalSound() {
+        return "The dog says: bark";
+    }
 
     public int getAverageMilisecondsLived() {
         return averageMilisecondsLived;
@@ -28,5 +30,10 @@ class Dog extends Animal {
 
     public void setColor(int color) {
         this.color = color;
+    }
+    private static final int DOG_AGE_RATIO = 7;
+
+    public int getHumanAge() {
+        return DOG_AGE_RATIO * age;
     }
 }
